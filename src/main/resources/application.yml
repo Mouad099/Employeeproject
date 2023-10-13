@@ -12,5 +12,17 @@ spring:
   h2:
     console:
       enabled: false
+  
   datasource:
-    username: sa
+    url: jdbc:postgresql://localhost:5432/NewDB
+    username: postgres
+    password: mouadit2023
+  driver-class-name: org.postgresql.Driver
+
+
+
+
+
+
+
+

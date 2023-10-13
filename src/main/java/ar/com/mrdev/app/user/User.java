@@ -35,6 +35,7 @@ import static jakarta.validation.constraints.Pattern.Flag.CASE_INSENSITIVE;
 @Data
 @ToString(exclude = {"password", "clearPassword"})
 @Entity(name = "users")
+@SequenceGenerator(name = "users_seq", sequenceName = "users_seq", allocationSize = 1)
 public class User {
 
 	public static final PasswordEncoder PASSWORD_ENCODER = new BCryptPasswordEncoder();
